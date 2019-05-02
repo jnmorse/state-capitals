@@ -10,7 +10,7 @@ async function searchStates(searchString) {
   }
 
   try {
-    const response = await fetch('../data/state_capitals.json')
+    const response = await fetch('https://jnmorse.github.io/state-capitals/data/state_capitals.json')
 
     if (response.ok) {
       const states = await response.json()
